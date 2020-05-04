@@ -1,0 +1,113 @@
+.slide.canvas {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: row-reverse;
+    align-items: center;
+}
+
+.paleta {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 170px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+
+    .bloque {
+        margin: 5px;
+        width: 170px;
+        display: flex;
+        justify-content: center;
+
+        .item {
+            margin: 1px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            border: 1px solid #999;
+            cursor: pointer;
+
+            &.size_0,
+            &.size_1,
+            &.size_2,
+            &.size_3,
+            &.size_4 {
+                position: relative;
+                background-color: #999;
+                border-color: #999;
+                margin-top: 30px;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 2px;
+                    height: 2px;
+                    background-color: #fff;
+                    border-radius: 50px;
+                    border: none;
+                }
+            }
+
+            &.size {
+                &.size_active {
+                    background-color: #555;
+                    border-color: #555;
+                }
+            }
+
+            &.size_1 {
+                &:before {
+                    width: 5px;
+                    height: 5px;
+                }
+            }
+
+            &.size_2 {
+                &:before {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+
+            &.size_3 {
+                &:before {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+            &.size_4 {
+                &:before {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            &.btn_active {
+                border-color: #000;
+            }
+        }
+    }
+}
+
+#canvas {
+    border: 1px solid #dcdcdc;
+
+    canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+#descarga a {
+    width: 170px;
+    height: 92px;
+    text-align: center;
+    background-size: contain;
+    display: block;
+    margin-top: 30px;
+    cursor: pointer;
+}

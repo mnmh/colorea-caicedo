@@ -1,0 +1,42 @@
+.pagina_01 {
+    background-color: $azul;
+    position: relative;
+
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .titulo {
+        width: 100vw;
+        height: 25vh;
+        margin-top: 100px;
+        position: relative;
+    }
+
+    .subtitulo {
+        width: 200px;
+        height: 200px;
+        position: relative;
+    }
+
+    .btm {
+        width: 100vw;
+        height: 200px;
+        margin-top: 150px;
+        position: relative;
+
+        .logo {
+            height: 20px;
+        }
+
+        .hash {
+            height: 20px;
+            margin-top: 20px;
+        }
+    }
+}

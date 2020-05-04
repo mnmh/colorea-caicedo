@@ -1,0 +1,23 @@
+.pagina_02 {
+    align-content: center;
+    overflow: hidden;
+
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .texto {
+        position: relative;
+        width: 500px;
+        transform: translate(-10vw, 0);
+        padding: 50px;
+        font-family: 'Inconsolata', monospace;
+        background-size: 100% 100%;
+    }
+}

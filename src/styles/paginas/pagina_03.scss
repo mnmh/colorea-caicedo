@@ -1,0 +1,17 @@
+.pagina_03 {
+    overflow: hidden;
+
+    .container {
+        width: 80vw;
+        height: 100vh;
+        display: flex;
+
+        .como, .bloque {
+            width: 50%;
+        }
+
+        .como {
+            background-size: 70%;
+        }
+    }
+}
